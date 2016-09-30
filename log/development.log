@@ -1726,3 +1726,113 @@ Processing by HomeController#index as HTML
   Rendered layouts/_topnavbar.html.erb (0.0ms)
   Rendered layouts/_footer.html.erb (0.0ms)
 Completed 200 OK in 46ms (Views: 45.7ms | ActiveRecord: 0.0ms)
+  [1m[36m (24.2ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL) [0m
+  [1m[35m (26.4ms)[0m  CREATE UNIQUE INDEX  "unique_schema_migrations" ON "schema_migrations"  ("version")
+  [1m[36m (0.4ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[35m (2.9ms)[0m  INSERT INTO "schema_migrations" (version) VALUES ('0')
+  [1m[36m (0.5ms)[0m  [1mSELECT version FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mSQL (0.3ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.5ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36mSQL (0.3ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.3ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mSQL (0.2ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36mSQL (0.3ms)[0m  [1mCREATE EXTENSION IF NOT EXISTS "plpgsql"[0m
+  [1m[35m (0.4ms)[0m  SELECT version FROM "schema_migrations"
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+
+
+Started GET "/" for 155.178.180.6 at 2016-09-30 18:53:42 +0000
+Processing by HomeController#index as HTML
+  Rendered home/index.html.erb within layouts/application (5.1ms)
+  Rendered layouts/_navigation.html.erb (1.2ms)
+  Rendered layouts/_topnavbar.html.erb (0.5ms)
+  Rendered layouts/_footer.html.erb (0.4ms)
+Completed 200 OK in 9704ms (Views: 9690.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0778144d1b49e448b7ba31664788157f0e9c7b6aea5563fbe16beeb155d37e17.css?body=1" for 155.178.180.6 at 2016-09-30 18:53:53 +0000
+
+
+Started GET "/assets/font-awesome.self-2d17540bab3759939e910ca38a695f014e0c777ded3ad7a01c4658b9d3fc980d.css?body=1" for 155.178.180.6 at 2016-09-30 18:53:53 +0000
+
+
+Started GET "/assets/animate/animate.self-570992b3ad6a262de1924aa4ecc17a6f9cf45cb8fd0daaf3cfe5a9f2f3e08e2e.css?body=1" for 155.178.180.6 at 2016-09-30 18:53:53 +0000
+
+
+Started GET "/assets/style.self-e4548281d8fab28ddb93b6de0f338b4f2ab86ca6a34938229ebe3da3ca7cfb79.css?body=1" for 155.178.180.6 at 2016-09-30 18:53:53 +0000
+
+
+Started GET "/assets/bootstrap/alert.self-742145c5bb847aafdadc6e339be795628f8bc25f177e851f03a8c42278eb0312.js?body=1" for 155.178.180.6 at 2016-09-30 18:53:53 +0000
+
+
+Started GET "/assets/jquery/jquery-2.1.1.self-cdd78b0dc506b751b442bb5e5298ea658af2ee55e46ccb88ba5583570ca686e2.js?body=1" for 155.178.180.6 at 2016-09-30 18:53:53 +0000
+
+
+Started GET "/assets/bootstrap/transition.self-6ad2488465135ab731a045a8ebbe3ea2fc501aed286042496eda1664fdd07ba9.js?body=1" for 155.178.180.6 at 2016-09-30 18:53:53 +0000
+
+
+Started GET "/assets/bootstrap/button.self-126ac9bf0e7f2d8568f8da3a00fd5f0fac6eae0946331003370161fbf8d7975e.js?body=1" for 155.178.180.6 at 2016-09-30 18:53:54 +0000
+
+
+Started GET "/assets/bootstrap/carousel.self-e47323f363ceb3dc0bdbce05e36e709ed428e339833a41140a85cb0af24b8127.js?body=1" for 155.178.180.6 at 2016-09-30 18:53:54 +0000
+
+
+Started GET "/assets/bootstrap/collapse.self-2eb697f62b587bb786ff940d82dd4be88cdeeaf13ca128e3da3850c5fcaec301.js?body=1" for 155.178.180.6 at 2016-09-30 18:53:55 +0000
+
+
+Started GET "/assets/bootstrap/dropdown.self-561cca1cbaf67474e01e9536f106bad541594860a6df997004591c1c1957a147.js?body=1" for 155.178.180.6 at 2016-09-30 18:53:55 +0000
+
+
+Started GET "/assets/bootstrap/modal.self-3e78617ade5663314b7ee0ea10375a5b34d59ffbade44939e3f2a4e4ef2019b3.js?body=1" for 155.178.180.6 at 2016-09-30 18:53:55 +0000
+
+
+Started GET "/assets/bootstrap/tab.self-5bf7078b682f8b131332eefa46b45fa5eff2eca745fc0d03e2991450888f7c28.js?body=1" for 155.178.180.6 at 2016-09-30 18:53:55 +0000
+
+
+Started GET "/assets/bootstrap/affix.self-6d6f1a7fc5c8aabf3547fa1b794fab6268f54bc55ad815e55873c71f52513517.js?body=1" for 155.178.180.6 at 2016-09-30 18:53:55 +0000
+
+
+Started GET "/assets/bootstrap/scrollspy.self-969f3c5f48cdf1e439c7fa1154c13b948715f5c689f87837c0b64521d3b46ef6.js?body=1" for 155.178.180.6 at 2016-09-30 18:53:55 +0000
+
+
+Started GET "/assets/bootstrap/tooltip.self-05afb177e08f98997ccfc84fa08a215e4b27d48d5fe4d049080675e9dffd8199.js?body=1" for 155.178.180.6 at 2016-09-30 18:53:56 +0000
+
+
+Started GET "/assets/bootstrap/popover.self-0aa93860b59fe7393f1dd490f54b3cb994f9d6155adffce034d4e14ae361b041.js?body=1" for 155.178.180.6 at 2016-09-30 18:53:56 +0000
+
+
+Started GET "/assets/bootstrap-sprockets.self-fbfa5ad7d9aa0afe439ec4ff3883acc4cb92b62cb67c40d674320c9aa1d4642d.js?body=1" for 155.178.180.6 at 2016-09-30 18:53:56 +0000
+
+
+Started GET "/assets/metisMenu/jquery.metisMenu.self-587029531d977fc7fa10623dd670189a298bd606124c23fc2edd051da5b0c914.js?body=1" for 155.178.180.6 at 2016-09-30 18:53:56 +0000
+
+
+Started GET "/assets/pace/pace.min.self-9bf6d667514a59744d5db2c9392aaf5595dec9c131a425ababa1cb8cddb814f2.js?body=1" for 155.178.180.6 at 2016-09-30 18:53:56 +0000
+
+
+Started GET "/assets/slimscroll/jquery.slimscroll.min.self-a2008e2992d055fbe5108d326a54c3083f843da1a30240d2b2e1f706716fa03e.js?body=1" for 155.178.180.6 at 2016-09-30 18:53:56 +0000
+
+
+Started GET "/assets/inspinia.self-7bb64be2ec9f334d1c9d23bada3e3bfe1f61680bfb098c47fb4e32dd233a37bc.js?body=1" for 155.178.180.6 at 2016-09-30 18:53:57 +0000
+
+
+Started GET "/assets/application.self-90e7ed1c03f271c6d5d952d21e8059fdd75eece5a10b1cf1b92a994332ddc129.js?body=1" for 155.178.180.6 at 2016-09-30 18:53:57 +0000
+
+
+Started GET "/assets/fontawesome-webfont-aadc3580d2b64ff5a7e6f1425587db4e8b033efcbf8f5c332ca52a5ed580c87c.woff2?v=4.3.0" for 155.178.180.6 at 2016-09-30 18:54:09 +0000
+
+
+Started GET "/assets/patterns/header-profile-c05909898218a521d3bd19ba09a9a43338de6de5fdf1d3fc771b0ec28ae416c5.png" for 155.178.180.6 at 2016-09-30 18:54:09 +0000
+
+
+Started GET "/home/minor" for 155.178.180.6 at 2016-09-30 18:54:29 +0000
+Processing by HomeController#minor as HTML
+  Rendered home/minor.html.erb within layouts/application (4.8ms)
+  Rendered layouts/_navigation.html.erb (0.2ms)
+  Rendered layouts/_topnavbar.html.erb (0.1ms)
+  Rendered layouts/_footer.html.erb (0.1ms)
+Completed 200 OK in 213ms (Views: 211.8ms | ActiveRecord: 0.0ms)
