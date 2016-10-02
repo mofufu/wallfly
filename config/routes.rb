@@ -1,4 +1,6 @@
 Myapp::Application.routes.draw do
+  resources :houses
+  devise_for :users
   get "home/index"
   get "home/minor"
   # The priority is based upon order of creation: first created -> highest priority.
@@ -54,4 +56,10 @@ root to: 'home#index'
   #     # (app/controllers/admin/products_controller.rb)
   #     resources :products
   #   end
+  
+  devise_scope :user do
+    get 'login', to: 'devise/sessions#new' 
+    get 'signup', to: 'devise/registrations#new'
+  end
+  
 end
