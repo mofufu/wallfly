@@ -1,0 +1,15 @@
+<%= simple_form_for(@ikitchen) do |f| %>
+  <%= f.error_notification %>
+
+  <div class="form-inputs">
+    <%= f.association :house %>
+    <%= f.input :sink %>
+    <%= f.input :cabinet %>
+    <%= f.input :stove %>
+    <%= f.input :floor %>
+  </div>
+
+  <div class="form-actions">
+    <%= f.button :submit %>
+  </div>
+<% end %>

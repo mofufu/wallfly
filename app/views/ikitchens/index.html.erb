@@ -1,0 +1,35 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Ikitchens</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>House</th>
+      <th>Sink</th>
+      <th>Cabinet</th>
+      <th>Stove</th>
+      <th>Floor</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ikitchens.each do |ikitchen| %>
+      <tr>
+        <td><%= ikitchen.house %></td>
+        <td><%= ikitchen.sink %></td>
+        <td><%= ikitchen.cabinet %></td>
+        <td><%= ikitchen.stove %></td>
+        <td><%= ikitchen.floor %></td>
+        <td><%= link_to 'Show', ikitchen %></td>
+        <td><%= link_to 'Edit', edit_ikitchen_path(ikitchen) %></td>
+        <td><%= link_to 'Destroy', ikitchen, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ikitchen', new_ikitchen_path %>

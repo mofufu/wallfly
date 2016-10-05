@@ -1,5 +1,15 @@
 Myapp::Application.routes.draw do
-  resources :houses
+  
+  
+  
+
+  
+  resources :houses do
+   resources :ikitchens
+   
+  end
+  
+  
   devise_for :users
   get "home/index"
   get "home/minor"
