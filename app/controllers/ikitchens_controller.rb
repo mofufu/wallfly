@@ -14,7 +14,9 @@ class IkitchensController < ApplicationController
 
   # GET /ikitchens/new
   def new
+    @house = House.find(params[:house_id])
     @ikitchen = Ikitchen.new
+    @ikitchen.house = @house
   end
 
   # GET /ikitchens/1/edit
